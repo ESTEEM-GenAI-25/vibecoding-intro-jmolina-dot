@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Jonathan J Molina - Biomedical Science & Entrepreneurship</title>
+    <title id="page-title">Dr. Jonathan J Molina - Biomedical Science & Entrepreneurship</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="config.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -25,16 +26,16 @@
         <div class="container mx-auto px-4 md:px-8 text-center">
             <div class="flex flex-col items-center">
                 <div class="w-32 h-32 rounded-full overflow-hidden mb-4 border-4 border-emerald-500">
-                    <img src="https://placehold.co/128x128/e2e8f0/64748b?text=Jonathan+Molina" alt="Jonathan Molina Profile Photo" class="w-full h-full object-cover">
+                    <img id="profile-image" src="https://placehold.co/128x128/e2e8f0/64748b?text=Jonathan+Molina" alt="Jonathan Molina Profile Photo" class="w-full h-full object-cover">
                 </div>
-                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-2">Dr. Jonathan J Molina</h1>
-                <p class="text-lg md:text-xl text-gray-600 mb-6">
+                <h1 id="hero-name" class="text-4xl md:text-5xl font-bold text-gray-900 mb-2">Dr. Jonathan J Molina</h1>
+                <p id="hero-title" class="text-lg md:text-xl text-gray-600 mb-6">
                     Ph.D. in Biomedical Sciences | M.S. in ESTEEM
                 </p>
-                <p class="text-md md:text-lg max-w-2xl text-gray-500 mb-8">
+                <p id="hero-bio" class="text-md md:text-lg max-w-2xl text-gray-500 mb-8">
                     Bridging the gap between scientific discovery and market-ready innovation. I leverage my deep scientific expertise to identify, develop, and commercialize impactful technologies.
                 </p>
-                <a href="#projects" class="inline-block bg-emerald-600 text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-emerald-700 transition duration-300">
+                <a href="#projects" id="hero-cta" class="inline-block bg-emerald-600 text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-emerald-700 transition duration-300">
                     Explore My Projects
                 </a>
             </div>
@@ -44,29 +45,29 @@
     <!-- Navigation Bar -->
     <nav class="sticky top-0 z-50 bg-white shadow-sm py-4">
         <div class="container mx-auto flex justify-center space-x-6">
-            <a href="#home" class="text-gray-600 hover:text-emerald-600 font-semibold transition duration-200">Home</a>
-            <a href="#about" class="text-gray-600 hover:text-emerald-600 font-semibold transition duration-200">About</a>
-            <a href="#projects" class="text-gray-600 hover:text-emerald-600 font-semibold transition duration-200">Projects</a>
-            <a href="#contact" class="text-gray-600 hover:text-emerald-600 font-semibold transition duration-200">Contact</a>
+            <a href="#home" class="text-gray-600 hover:text-emerald-600 font-semibold transition duration-200" data-nav="home">Home</a>
+            <a href="#about" class="text-gray-600 hover:text-emerald-600 font-semibold transition duration-200" data-nav="about">About</a>
+            <a href="#projects" class="text-gray-600 hover:text-emerald-600 font-semibold transition duration-200" data-nav="projects">Projects</a>
+            <a href="#contact" class="text-gray-600 hover:text-emerald-600 font-semibold transition duration-200" data-nav="contact">Contact</a>
         </div>
     </nav>
 
     <!-- About Section -->
     <section id="about" class="section-padding bg-gray-100">
         <div class="container mx-auto px-4 md:px-8">
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-8 text-center">About Me</h2>
+            <h2 id="about-title" class="text-3xl md:text-4xl font-bold text-gray-900 mb-8 text-center">About Me</h2>
             <div class="flex flex-col md:flex-row items-center md:items-start space-y-8 md:space-y-0 md:space-x-12">
                 <div class="md:w-1/2">
-                    <p class="text-md md:text-lg text-gray-700 leading-relaxed mb-4">
+                    <p id="about-paragraph1" class="text-md md:text-lg text-gray-700 leading-relaxed mb-4">
                         I am a recent Ph.D. graduate in Integrated Biomedical Sciences from the University of Notre Dame, with a focus on dissecting the inflammatory background during catheter-associated urinary tract infections. My doctoral work led to the development of novel catheters to reduce inflammation and infections, and resulted in several high-impact publications.
                     </p>
-                    <p class="text-md md:text-lg text-gray-700 leading-relaxed">
+                    <p id="about-paragraph2" class="text-md md:text-lg text-gray-700 leading-relaxed">
                         I am currently pursuing a Master's degree in Engineering, Science, and Technology Entrepreneurship (ESTEEM) at Notre Dame. I'm leveraging my scientific expertise to conduct market research, develop strategic launch plans, and identify key market segments within the MedTech industry. My passion is to translate cutting-edge scientific discoveries from the lab into viable, impactful business solutions.
                     </p>
                 </div>
                 <div class="md:w-1/2 flex justify-center md:justify-end">
                     <div class="w-full md:w-3/4 lg:w-2/3 rounded-lg shadow-xl overflow-hidden">
-                         <img src="https://placehold.co/500x350/e2e8f0/64748b?text=Professional+Photo" alt="Professional Photo" class="w-full h-auto">
+                         <img id="professional-image" src="https://placehold.co/500x350/e2e8f0/64748b?text=Professional+Photo" alt="Professional Photo" class="w-full h-auto">
                     </div>
                 </div>
             </div>
@@ -76,39 +77,9 @@
     <!-- Projects Section -->
     <section id="projects" class="section-padding">
         <div class="container mx-auto px-4 md:px-8">
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">Featured Work</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- PhD Research Card -->
-                <div class="bg-white rounded-lg shadow-md hover:shadow-xl transition duration-300 p-6 flex flex-col items-center text-center">
-                    <h3 class="text-xl md:text-2xl font-semibold text-gray-900 mb-2">PhD Research: Fibrinolytic-deficiencies</h3>
-                    <p class="text-gray-600 mb-4">
-                        My doctoral research focused on how defects in the host's fibrinolytic system can predispose them to septicemia from catheter-associated UTIs. This work was published in Nature Communications.
-                    </p>
-                </div>
-
-                <!-- ESTEEM Project 1 Card -->
-                <div class="bg-white rounded-lg shadow-md hover:shadow-xl transition duration-300 p-6 flex flex-col items-center text-center">
-                    <h3 class="text-xl md:text-2xl font-semibold text-gray-900 mb-2">ESTEEM Capstone Project: Parkview Health</h3>
-                    <p class="text-gray-600 mb-4">
-                        I led a project to understand the market value of an IP developed by a urologist, conducting 50 interviews and proposing a strategic launch plan into the MedTech industry.
-                    </p>
-                </div>
-
-                <!-- Post-Doctoral Research Card -->
-                <div class="bg-white rounded-lg shadow-md hover:shadow-xl transition duration-300 p-6 flex flex-col items-center text-center">
-                    <h3 class="text-xl md:text-2xl font-semibold text-gray-900 mb-2">Post-Doctoral Research: Spatial Proteomics</h3>
-                    <p class="text-gray-600 mb-4">
-                        I utilized Xenium spatial proteomics to analyze the immune milieu in bladder tissues, refining transcriptomic methodologies to generate rapid and actionable insights for critical projects.
-                    </p>
-                </div>
-
-                <!-- Publications Card -->
-                <div class="bg-white rounded-lg shadow-md hover:shadow-xl transition duration-300 p-6 flex flex-col items-center text-center">
-                    <h3 class="text-xl md:text-2xl font-semibold text-gray-900 mb-2">Selected Publications</h3>
-                    <p class="text-gray-600 mb-4">
-                        Authored and co-authored over 8 high-impact publications, effectively communicating complex scientific findings to diverse audiences.
-                    </p>
-                </div>
+            <h2 id="projects-title" class="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">Featured Work</h2>
+            <div id="projects-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Projects will be dynamically generated from config.js -->
             </div>
         </div>
     </section>
@@ -116,21 +87,21 @@
     <!-- Contact Section -->
     <section id="contact" class="section-padding bg-gray-100">
         <div class="container mx-auto px-4 md:px-8 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Let's Connect</h2>
-            <p class="text-lg text-gray-600 mb-8">
+            <h2 id="contact-title" class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Let's Connect</h2>
+            <p id="contact-description" class="text-lg text-gray-600 mb-8">
                 I'm always open to new opportunities and collaborations. Feel free to connect with me on LinkedIn or via email.
             </p>
             <div class="flex justify-center space-x-6">
                 <!-- LinkedIn Link -->
-                <a href="https://linkedin.com/in/JonathanJMolina" target="_blank" class="text-gray-500 hover:text-emerald-600 transition duration-300">
+                <a id="linkedin-link" href="https://linkedin.com/in/JonathanJMolina" target="_blank" class="text-gray-500 hover:text-emerald-600 transition duration-300">
                     <svg class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.765 0-.975.784-1.765 1.75-1.765.967 0 1.75.79 1.75 1.765 0 .975-.783 1.765-1.75 1.765zm13.5 12.268h-3v-5.604c0-3.368-4.01-3.113-4.01 0v5.604h-3v-11h3v1.765c1.396-2.586 7.025-2.404 7.025 2.503v6.732z"/></svg>
                 </a>
                 <!-- GitHub Placeholder -->
-                <a href="#" target="_blank" class="text-gray-500 hover:text-emerald-600 transition duration-300">
+                <a id="github-link" href="#" target="_blank" class="text-gray-500 hover:text-emerald-600 transition duration-300">
                     <svg class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.809 1.309 3.491.997.107-.775.418-1.309.762-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.314.465-2.381 1.236-3.221-.124-.3-2.652-10.29 1.155-10.29 1.155 0 2.29.58 3.793 1.523 2.115-.582 4.19-.873 6.26-.873 2.07 0 4.145.291 6.26.873 1.503-.943 2.638-1.523 3.793-1.523 2.592 5.251 1.468 10.29 1.155 10.29.771.84 1.236 1.907 1.236 3.221 0 4.609-2.801 5.625-5.471 5.922.429.369.814 1.05.814 2.118v3.134c0 .316.194.693.797.577 4.769-1.587 8.205-6.085 8.205-11.385 0-6.627-5.373-12-12-12z"/></svg>
                 </a>
                 <!-- Email Link -->
-                <a href="mailto:jmolina@nd.edu" class="text-gray-500 hover:text-emerald-600 transition duration-300">
+                <a id="email-link" href="mailto:jmolina@nd.edu" class="text-gray-500 hover:text-emerald-600 transition duration-300">
                     <svg class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12.713l-12-9.713h24l-12 9.713zm-12 5.287l6.905-5.604v5.604h-6.905zm17.095 0v-5.604l6.905 5.604h-6.905zm6.905-13.824l-12 9.713-12-9.713c-1.386 1.83-2 3.847-2 5.824v12c0 1.104.896 2 2 2h20c1.104 0 2-.896 2-2v-12c0-1.977-.614-3.994-2-5.824z"/></svg>
                 </a>
             </div>
@@ -140,23 +111,87 @@
     <!-- Footer -->
     <footer class="bg-gray-800 text-gray-300 py-6 text-center">
         <p class="text-sm">
-            &copy; <span id="current-year"></span> Jonathan J Molina. All Rights Reserved.
+            &copy; <span id="current-year"></span> <span id="footer-copyright">Jonathan J Molina. All Rights Reserved.</span>
         </p>
     </footer>
 
     <script>
-        // Set the current year in the footer
-        document.getElementById('current-year').textContent = new Date().getFullYear();
+        // Wait for the config to load, then populate the page
+        document.addEventListener('DOMContentLoaded', function() {
+            // Set the current year in the footer
+            document.getElementById('current-year').textContent = new Date().getFullYear();
 
-        // Smooth scroll for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
+            // Populate page content from config
+            populatePageContent();
+
+            // Smooth scroll for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
                 });
             });
         });
+
+        function populatePageContent() {
+            if (typeof CONFIG === 'undefined') {
+                console.error('CONFIG not found. Make sure config.js is loaded.');
+                return;
+            }
+
+            // Site metadata
+            document.getElementById('page-title').textContent = CONFIG.site.title;
+            document.title = CONFIG.site.title;
+
+            // Personal information
+            document.getElementById('profile-image').src = CONFIG.personal.profileImage;
+            document.getElementById('profile-image').alt = CONFIG.personal.name + ' Profile Photo';
+            document.getElementById('hero-name').textContent = CONFIG.personal.name;
+            document.getElementById('hero-title').textContent = CONFIG.personal.title;
+            document.getElementById('hero-bio').textContent = CONFIG.personal.bio;
+            document.getElementById('professional-image').src = CONFIG.personal.professionalImage;
+
+            // Navigation
+            document.querySelector('[data-nav="home"]').textContent = CONFIG.navigation.home;
+            document.querySelector('[data-nav="about"]').textContent = CONFIG.navigation.about;
+            document.querySelector('[data-nav="projects"]').textContent = CONFIG.navigation.projects;
+            document.querySelector('[data-nav="contact"]').textContent = CONFIG.navigation.contact;
+
+            // Hero section
+            document.getElementById('hero-cta').textContent = CONFIG.hero.ctaButton;
+
+            // About section
+            document.getElementById('about-title').textContent = CONFIG.about.title;
+            document.getElementById('about-paragraph1').textContent = CONFIG.about.paragraph1;
+            document.getElementById('about-paragraph2').textContent = CONFIG.about.paragraph2;
+
+            // Projects section
+            document.getElementById('projects-title').textContent = CONFIG.projects.title;
+            const projectsContainer = document.getElementById('projects-container');
+            projectsContainer.innerHTML = '';
+            
+            CONFIG.projects.items.forEach(project => {
+                const projectCard = document.createElement('div');
+                projectCard.className = 'bg-white rounded-lg shadow-md hover:shadow-xl transition duration-300 p-6 flex flex-col items-center text-center';
+                projectCard.innerHTML = `
+                    <h3 class="text-xl md:text-2xl font-semibold text-gray-900 mb-2">${project.title}</h3>
+                    <p class="text-gray-600 mb-4">${project.description}</p>
+                `;
+                projectsContainer.appendChild(projectCard);
+            });
+
+            // Contact section
+            document.getElementById('contact-title').textContent = CONFIG.contact.title;
+            document.getElementById('contact-description').textContent = CONFIG.contact.description;
+            document.getElementById('linkedin-link').href = CONFIG.contact.links.linkedin;
+            document.getElementById('github-link').href = CONFIG.contact.links.github;
+            document.getElementById('email-link').href = 'mailto:' + CONFIG.contact.links.email;
+
+            // Footer
+            document.getElementById('footer-copyright').textContent = CONFIG.footer.copyright;
+        }
     </script>
 </body>
 </html>
